@@ -26,11 +26,11 @@ function Header() {
       <Container>
         <div className="container">
           <div
-            className="grid grid-cols-6"
+            className="flex justify-center md:justify-between"
             variant="dense"
             sx={{ color: "white" }}
           >
-            <div className="flex gap-2 col-start-1 col-end-4 items-center">
+            <div className="flex gap-2 items-center">
               <StyledButton size="small">
                 <InstagramIcon />
               </StyledButton>
@@ -47,18 +47,24 @@ function Header() {
                 The hosting theme that tries to be the best
               </Typography>
             </div>
-            <div className="flex gap-2 col-end-7 justify-end">
-              <StyledButton sx={{ textTransform: "capitalize" }}>
+            <div className="hidden md:flex gap-2">
+              <StyledButton
+                sx={{ textTransform: "capitalize", borderRadius: "0.5rem" }}
+              >
                 <MessageIcon /> Support
               </StyledButton>
-              <StyledButton sx={{ textTransform: "capitalize" }}>
+              <StyledButton
+                sx={{ textTransform: "capitalize", borderRadius: "0.5rem" }}
+              >
                 <PersonIcon /> Login
               </StyledButton>
-              <StyledButton sx={{ textTransform: "capitalize" }}>
+              <StyledButton
+                sx={{ textTransform: "capitalize", borderRadius: "0.5rem" }}
+              >
                 <PersonIcon /> Register
               </StyledButton>
               <StyledButton
-                sx={{ textTransform: "capitalize" }}
+                sx={{ textTransform: "capitalize", borderRadius: "0.5rem" }}
                 endIcon={<KeyboardArrowDownIcon />}
               >
                 English
